@@ -1,0 +1,14 @@
+{
+  "name": "react-username",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.13.0"
+  }
+}

@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <div id="a">
+        <div id="b">
+        </div>
+    </div>
+</body>
+
+<script>
+    function appendChildren(decorateDivFunction) {
+        var allDivs = document.getElementsByTagName("div");
+        for (const div of Array.from(allDivs)) {
+            var newDiv = document.createElement("div");
+            decorateDivFunction(newDiv);
+            div.appendChild(newDiv);
+        }
+        // for (var i = 0; i < allDivs.length; i++) {
+        //     var newDiv = document.createElement("div");
+        //     decorateDivFunction(newDiv);
+        //     allDivs[i].appendChild(newDiv);
+        // }
+    }
+    appendChildren(() => {});
+</script>
+
+</html>

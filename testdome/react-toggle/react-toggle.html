@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>React Toggle</title>
+</head>
+<body>
+    <script>
+        class Message extends React.Component {
+
+            constructor() {
+                super();
+                this.state = {
+                    display: false
+                };
+            }
+
+            render() {
+                this.state.display === false ? <div /> :
+                (<React.Fragment>
+                    <a href="#">Want to buy a new car?</a>
+                    <p>Call +11 22 33 44 now!</p>
+                </React.Fragment>);
+            }
+        }
+
+        document.body.innerHTML = "<div id='root'> </div>";
+
+        const rootElement = document.getElementById("root");
+        ReactDOM.render(<Message />, rootElement);
+    </script>
+</body>
+
+</html>
